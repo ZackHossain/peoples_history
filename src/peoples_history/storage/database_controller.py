@@ -106,4 +106,35 @@ class DatabaseController:
 
         return results
     
+    #
+    # RESOURCE FUNCTIONS
+    #
+    def get_resource(self, uuid):
+        for resource in self.resources.read():
+            if resource["uuid"] == uuid:
+                return resource
+        return None
     
+    def add_resource(self, resource):
+        resource["uuid"] = self.new_uuid()
+        
+        resources = self.resources.read()
+
+        resources.append(resource)
+
+        self.events.write(resource)
+
+        return resource
+
+    def update_resource(self, resource):
+        resources = self.resources.read()
+        
+        new_resources = []
+        
+        for e in resources:
+            if e["uuid"] == resource["uuid"]:
+                new_resources.append(resource)
+            else:
+                new_resources.append(e)
+        
+        self.events.write(new_resources)

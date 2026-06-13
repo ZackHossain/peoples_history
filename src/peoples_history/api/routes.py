@@ -73,3 +73,38 @@ def update_event(uuid):
     db.update_event(event)
 
     return jsonify(event)
+
+@api.route(
+    "/resource",
+    methods=["POST"]
+)
+def add_resource(resource):
+    return jsonify(db.add_resource(resource))
+
+
+@api.route(
+    "/resource/<uuid>"
+)
+def get_resource(uuid):
+    resource = db.get_event(uuid)
+
+    if resource is None:
+        return jsonify(
+            {"error": "event not found"}
+        ), 404
+
+    return jsonify(resource)
+
+@api.route(
+    "/resource/<uuid>",
+    methods=["PUT"]
+)
+def update_resource(uuid):
+    resource = db.get_event(uuid)
+
+    if resource is None:
+        return jsonify(
+            {"error": "event not found"}
+        ), 404
+
+    return jsonify(resource)

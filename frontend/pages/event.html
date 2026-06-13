@@ -3,13 +3,40 @@
 <head>
     <title>Event</title>
 
+    <link rel="stylesheet" href="../css/style.css" class="css">
+
     <script src="../js/api.js"></script>
     <script src="../js/event.js" defer></script>
 </head>
-
 <body>
+    <header class="header">
 
-<div id="event"></div>
+        <div class="title">
+            People's History
+        </div>
+
+        <button class="menu-btn" onclick="toggleSidebar()">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+
+    </header>
+
+    <!-- Sidebar -->
+    <div id="sidebar" class="sidebar">
+
+        <div class="sidebar-header">
+            <h3>Filters</h3>
+            <button class="menu-btn" onclick="toggleSidebar()">
+                <i class="fa-solid fa-x"></i>
+            </button>
+        </div>
+        <br>
+        <label>Year</label>
+        <input type="number" id="year-input" value="1917">
+
+    </div>
+
+    <div id="event"></div>
 
 </body>
 </html>

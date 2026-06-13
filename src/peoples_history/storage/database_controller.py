@@ -8,13 +8,19 @@ class DatabaseController:
         locations_store,
         tags_store,
         resources_store,
-        relationships_store
+        relationships_store,
+        people_store,
+        period_store,
+        organisation_store
     ):
         self.events = events_store
         self.locations = locations_store
         self.tags = tags_store
         self.resources = resources_store
         self.relationships = relationships_store
+        self.people_store = people_store
+        self.period_store = period_store
+        self.organisation_store = organisation_store
 
     def new_uuid(self):
         return str(uuid.uuid4())
@@ -34,9 +40,17 @@ class DatabaseController:
 
     def add_event(self, event):
 
+        if (event["resources"] != None):
+            resources = event.pop("resources", None)
+            for r in resources:
+                self.add_resource(r)
+        
         events = self.events.read()
 
         events.append(event)
+        
+        print(event)
+        return event
 
         self.events.write(events)
 
@@ -122,7 +136,7 @@ class DatabaseController:
 
         resources.append(resource)
 
-        self.events.write(resource)
+        self.resources.write(resource)
 
         return resource
 
@@ -137,4 +151,4 @@ class DatabaseController:
             else:
                 new_resources.append(e)
         
-        self.events.write(new_resources)
+        self.resources.write(new_resources)

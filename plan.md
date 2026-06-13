@@ -1,5 +1,10 @@
 # People's History
 
+## To Do
+
+- Implement data validation on new db entries
+- 
+
 ## Functionality
 
 Users should be able to see various historical events, period, locations, etc. via an interactive world map via a website. Events (one off or periods) should have a summary of the event with extra resources and readings.

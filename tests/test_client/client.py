@@ -1,7 +1,7 @@
 import requests
 import json
 
-BASE_URL = "http://127.0.0.1:5000"
+BASE_URL = "http://127.0.0.1:5050"
 
 
 # -------------------------
@@ -30,8 +30,13 @@ def create_event():
         "start_date": "1917-11-07",
         "end_date": "1917-11-08",
         "summary": "Bolsheviks seize power in Petrograd",
-        "locations": ["petrograd"],
-        "tags": ["revolution"]
+        "countries": ["Russia"],
+        "tags": ["revolution"],
+        "resources": [
+            {
+                "r": "hello!"
+            }
+        ]
     }
 
     r = requests.post(

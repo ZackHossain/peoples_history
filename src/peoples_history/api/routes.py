@@ -7,14 +7,17 @@ from peoples_history.storage.json_store import JsonStore
 from peoples_history.storage.database_controller import DatabaseController
 
 EVENT_STORE = JsonStore(Path(__file__).resolve().parent / "../data/events.json")
-ORGANISATION_STORE = JsonStore(Path(__file__).resolve().parent / "../data/organisations.json")
+LOCATION_STORE = JsonStore(Path(__file__).resolve().parent / "../data/locations.json")
 TAGS_STORE = JsonStore(Path(__file__).resolve().parent / "../data/tags.json")
+RESOURCE_STORE = JsonStore(Path(__file__).resolve().parent / "../data/resources.json")
+RELATIONSHIP_STORE = JsonStore(Path(__file__).resolve().parent / "../data.relationships.json")
 PEOPLE_STORE = JsonStore(Path(__file__).resolve().parent / "../data/people.json")
 PERIODS_STORE = JsonStore(Path(__file__).resolve().parent / "../data/periods.json")
+ORGANISATION_STORE = JsonStore(Path(__file__).resolve().parent / "../data/organisations.json")
 
 api = Blueprint("api", __name__)
 
-db = DatabaseController(EVENT_STORE, ORGANISATION_STORE, TAGS_STORE, PEOPLE_STORE, PERIODS_STORE)
+db = DatabaseController(EVENT_STORE, LOCATION_STORE, TAGS_STORE, RESOURCE_STORE, RELATIONSHIP_STORE, PEOPLE_STORE, PERIODS_STORE, ORGANISATION_STORE)
 
 @api.route("/events")
 def get_events():

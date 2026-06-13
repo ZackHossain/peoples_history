@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>People's History</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Icons -->
+    <script src="https://kit.fontawesome.com/2cb394a927.js" crossorigin="anonymous"></script>
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <!-- Leaflet -->
+    <link
+        rel="stylesheet"
+        href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    >
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+    <script src="js/api.js"></script>
+    <script src="js/map.js" defer></script>
+</head>
+
+<body>
+
+<header class="header">
+
+    <div class="title">
+        People's History
+    </div>
+
+    <button class="menu-btn" onclick="toggleSidebar()">
+        <i class="fa-solid fa-bars"></i>
+    </button>
+
+</header>
+
+<!-- Sidebar -->
+<div id="sidebar" class="sidebar">
+
+    <div class="sidebar-header">
+        <h3>Filters</h3>
+        <button class="menu-btn" onclick="toggleSidebar()">
+            <i class="fa-solid fa-x"></i>
+        </button>
+    </div>
+    <br>
+    <label>Year</label>
+    <input type="number" id="year-input" value="1917">
+
+</div>
+
+<!-- Map -->
+<div id="map"></div>
+
+<footer class="footer">
+    Built for exploring revolutionary history
+</footer>
+
+</body>
+</html>

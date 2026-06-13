@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add Event</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+
+    <script src="../js/api.js"></script>
+    <script src="../js/add_event.js" defer></script>
+</head>
+<header>
+    
+</header>
+<body>
+<h1>Add Event</h1>
+
+<form id="event-form">
+
+    <label>Name</label>
+    <input id="name" required>
+
+    <label>Start Date</label>
+    <input id="start_date" type="date" required>
+
+    <label>End Date</label>
+    <input id="end_date" type="date" required>
+    
+    <label>Country</label>
+    <input id="country" required>
+
+    <label>Summary</label>
+    <textarea id="summary"></textarea>
+
+    <button type="submit">
+        Create Event
+    </button>
+
+</form>
+
+</body>
+</html>

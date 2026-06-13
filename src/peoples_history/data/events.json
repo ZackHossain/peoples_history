@@ -1,0 +1,38 @@
+[
+    {
+        "uuid": "bca2f791-e053-4aa7-9a42-ed5ec5424e65",
+        "name": "Russian Revolution",
+        "start_date": "1917-03-08",
+        "end_date": "1917-11-08",
+        "countries": [
+            "Russia"
+        ],
+        "summary": "The Russian Revolution of 1917!!!!!!"
+    },
+    {
+        "name": "German Revolution",
+        "start_date": "1918-10-29",
+        "end_date": "1923-11-11",
+        "summary": "German Rev!",
+        "countries": [
+            "Germany"
+        ],
+        "resources": [],
+        "tags": [],
+        "relationships": [],
+        "uuid": "95a99175-d976-496b-9940-8cf6262dd640"
+    },
+    {
+        "name": "Bienno Rosso",
+        "start_date": "1919-01-01",
+        "end_date": "1920-12-30",
+        "summary": "Italian Revolution\n",
+        "countries": [
+            "Italy"
+        ],
+        "resources": [],
+        "tags": [],
+        "relationships": [],
+        "uuid": "d3543354-8127-4177-8d01-a2d40a3b47eb"
+    }
+]

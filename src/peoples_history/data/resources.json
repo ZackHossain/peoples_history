@@ -1,0 +1,18 @@
+[
+    {
+        "title": "Hello",
+        "author": "Chris Harman",
+        "source": "my brain",
+        "resource_type": "book",
+        "summary": "Hello",
+        "uuid": "edbbee0b-5d0f-462a-b9dd-e524ad3800b5"
+    },
+    {
+        "title": "Hello",
+        "author": "Chris Harman",
+        "source": "my brain",
+        "resource_type": "book",
+        "summary": "Hello",
+        "uuid": "31fc9a16-830b-4df5-908a-1e4bf36a05f3"
+    }
+]

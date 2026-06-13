@@ -39,17 +39,16 @@ class DatabaseController:
         return None
 
     def add_event(self, event):
+        resource_uuids = []
         if (event["resources"] != None):
             resources = event.pop("resources", None)
             for r in resources:
-                self.add_resource(r)
+                resource_uuids.append(self.add_resource(r)["uuid"])
+        event["resources"] = resource_uuids
         
         events = self.events.read()
 
         events.append(event)
-        
-        print(event)
-        return event
 
         self.events.write(events)
 
@@ -132,10 +131,13 @@ class DatabaseController:
         resource["uuid"] = self.new_uuid()
         
         resources = self.resources.read()
+        
+        if (type(resources) != list):
+            resources = [resources]
 
         resources.append(resource)
 
-        self.resources.write(resource)
+        self.resources.write(resources)
 
         return resource
 

@@ -2,7 +2,7 @@ from pydantic import BaseModel, Field
 from typing import List, Optional
 
 class Location(BaseModel):
-    uuid: Optional[str]
+    uuid: Optional[str] = None
 
     name: str
 

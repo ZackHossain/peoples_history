@@ -2,7 +2,7 @@ from pydantic import BaseModel, Field
 from typing import List, Optional
 
 class Tag(BaseModel):
-    uuid: Optional[str]
+    uuid: Optional[str] = None
     title: str
 
     def to_dict(self):

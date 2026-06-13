@@ -34,5 +34,92 @@
         "tags": [],
         "relationships": [],
         "uuid": "d3543354-8127-4177-8d01-a2d40a3b47eb"
+    },
+    {
+        "name": "October Revolution",
+        "start_date": "1917-11-07",
+        "end_date": "1917-11-08",
+        "summary": "Bolsheviks seize power in Petrograd",
+        "countries": [
+            "Russia"
+        ],
+        "tags": [
+            "revolution"
+        ],
+        "uuid": "d1ef4f81-9f0d-4b0c-9692-bcec934dbc49"
+    },
+    {
+        "name": "October Revolution",
+        "start_date": "1917-11-07",
+        "end_date": "1917-11-08",
+        "summary": "Bolsheviks seize power in Petrograd",
+        "countries": [
+            "Russia"
+        ],
+        "tags": [
+            "revolution"
+        ],
+        "uuid": "9c4309c0-785e-4f0e-a77e-863136d963d3"
+    },
+    {
+        "name": "October Revolution",
+        "start_date": "1917-11-07",
+        "end_date": "1917-11-08",
+        "summary": "Bolsheviks seize power in Petrograd",
+        "countries": [
+            "Russia"
+        ],
+        "tags": [
+            "revolution"
+        ],
+        "uuid": "3e294f34-4529-4194-86fc-7e0d4b99cd24"
+    },
+    {
+        "name": "October Revolution",
+        "start_date": "1917-11-07",
+        "end_date": "1917-11-08",
+        "summary": "Bolsheviks seize power in Petrograd",
+        "countries": [
+            "Russia"
+        ],
+        "tags": [
+            "revolution"
+        ],
+        "uuid": "4a8dc239-95fd-4b44-8d2e-9eacaeaea84e",
+        "resources": [
+            "30912b7b-a825-4e3c-9200-fba5e209cf09"
+        ]
+    },
+    {
+        "name": "October Revolution",
+        "start_date": "1917-11-07",
+        "end_date": "1917-11-08",
+        "summary": "Bolsheviks seize power in Petrograd",
+        "countries": [
+            "Russia"
+        ],
+        "tags": [
+            "revolution"
+        ],
+        "uuid": "a63d9083-56f4-4211-b9ef-219d762e20b1",
+        "resources": [
+            "edbbee0b-5d0f-462a-b9dd-e524ad3800b5"
+        ]
+    },
+    {
+        "name": "October Revolution",
+        "start_date": "1917-11-07",
+        "end_date": "1917-11-08",
+        "summary": "Bolsheviks seize power in Petrograd",
+        "countries": [
+            "Russia"
+        ],
+        "tags": [
+            "revolution"
+        ],
+        "uuid": "7b52dbb2-43da-4189-b055-f8ac81a7cff0",
+        "resources": [
+            "31fc9a16-830b-4df5-908a-1e4bf36a05f3"
+        ]
     }
 ]

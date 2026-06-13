@@ -66,8 +66,6 @@ def add_event():
     
     # data handling
     event = request.json
-    
-    print(event)
 
     event["uuid"] = db.new_uuid()
 

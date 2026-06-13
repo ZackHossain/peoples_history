@@ -2,7 +2,7 @@ from pydantic import BaseModel, Field
 from typing import List, Optional
 
 class Relationship(BaseModel):
-    uuid: Optional[str]
+    uuid: Optional[str] = None
     
     source_uuid: str
     target_uuid: str

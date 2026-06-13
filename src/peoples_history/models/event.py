@@ -1,9 +1,10 @@
 from pydantic import BaseModel, Field
 from typing import List, Optional
 from datetime import date
+from peoples_history.models.resource import Resource
 
 class Event(BaseModel):
-    uuid: Optional[str]
+    uuid: Optional[str] = None
     name: str
 
     start_date: date
@@ -11,8 +12,8 @@ class Event(BaseModel):
 
     summary: str
 
-    countries: List[str] = Field(default_factory=list)
-    resources: List[str] = Field(default_factory=list)
+    countries: List[str]
+    resources: Optional[List[Resource]] = None
     tags: List[str] = Field(default_factory=list)
     relationships: List[str] = Field(default_factory=list)
 

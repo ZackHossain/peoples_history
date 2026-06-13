@@ -34,7 +34,11 @@ def create_event():
         "tags": ["revolution"],
         "resources": [
             {
-                "r": "hello!"
+                "title": "Hello",
+                "author": "Chris Harman",
+                "source": "my brain",
+                "resource_type": "book",
+                "summary": "Hello"
             }
         ]
     }
@@ -48,7 +52,6 @@ def create_event():
     print(json.dumps(r.json(), indent=2))
 
     return r.json()
-
 
 # -------------------------
 # DELETE event
@@ -66,20 +69,20 @@ if __name__ == "__main__":
 
     print("\n--- CREATE EVENT ---")
     new_event = create_event()
-
-    event_id = new_event.get("uuid")
-
-    print("\n--- GET SINGLE EVENT ---")
-    get_event_by_id(event_id)
     
-    print("\n--- GET ALL EVENTS ---")
-    get_events()
-    
-    print("\n--- DELETE EVENT ---")
-    delete_event(event_id)
-    
-    print("\n--- GET NON-EXISTENT EVENT ---")
-    get_event_by_id(event_id)
+    # event_id = new_event.get("uuid")
 
-    print("\n--- FINAL STATE ---")
-    get_events()
+    # print("\n--- GET SINGLE EVENT ---")
+    # get_event_by_id(event_id)
+    
+    # print("\n--- GET ALL EVENTS ---")
+    # get_events()
+    
+    # print("\n--- DELETE EVENT ---")
+    # delete_event(event_id)
+    
+    # print("\n--- GET NON-EXISTENT EVENT ---")
+    # get_event_by_id(event_id)
+
+    # print("\n--- FINAL STATE ---")
+    # get_events()

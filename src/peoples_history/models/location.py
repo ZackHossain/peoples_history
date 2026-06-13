@@ -1,9 +1,8 @@
-from dataclasses import dataclass
+from pydantic import BaseModel, Field
+from typing import List, Optional
 
-
-@dataclass
-class Location:
-    uuid: str
+class Location(BaseModel):
+    uuid: Optional[str]
 
     name: str
 

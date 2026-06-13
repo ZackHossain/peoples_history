@@ -1,10 +1,9 @@
-from dataclasses import dataclass
+from pydantic import BaseModel, Field
+from typing import List, Optional
 
-
-@dataclass
-class Relationship:
-    uuid: str
-
+class Relationship(BaseModel):
+    uuid: Optional[str]
+    
     source_uuid: str
     target_uuid: str
 

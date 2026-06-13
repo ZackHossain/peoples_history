@@ -1,15 +1,14 @@
-from dataclasses import dataclass
+from pydantic import BaseModel, Field
+from typing import List, Optional
 
-
-@dataclass
-class Resource:
-    uuid: str
+class Resource(BaseModel):
+    uuid: Optional[str]
 
     title: str
     author: str
 
     source: str
-    link: str
+    link: Optional[str]
 
     resource_type: str
 

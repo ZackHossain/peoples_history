@@ -39,7 +39,6 @@ class DatabaseController:
         return None
 
     def add_event(self, event):
-
         if (event["resources"] != None):
             resources = event.pop("resources", None)
             for r in resources:

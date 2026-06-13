@@ -3,8 +3,12 @@ from flask import jsonify
 from flask import request
 from pathlib import Path
 
+from pydantic import ValidationError
+
 from peoples_history.storage.json_store import JsonStore
 from peoples_history.storage.database_controller import DatabaseController
+from peoples_history.models.event import Event
+from peoples_history.models.resource import Resource
 
 EVENT_STORE = JsonStore(Path(__file__).resolve().parent / "../data/events.json")
 LOCATION_STORE = JsonStore(Path(__file__).resolve().parent / "../data/locations.json")
@@ -18,6 +22,10 @@ ORGANISATION_STORE = JsonStore(Path(__file__).resolve().parent / "../data/organi
 api = Blueprint("api", __name__)
 
 db = DatabaseController(EVENT_STORE, LOCATION_STORE, TAGS_STORE, RESOURCE_STORE, RELATIONSHIP_STORE, PEOPLE_STORE, PERIODS_STORE, ORGANISATION_STORE)
+
+#
+# EVENTS
+#
 
 @api.route("/events")
 def get_events():
@@ -44,6 +52,19 @@ def get_event(uuid):
 )
 def add_event():
 
+    # data validation
+    try:
+        event = Event(**request.json)
+
+    except ValidationError as e:
+        return {
+            "error": "invalid_event",
+            "details": e.errors()
+        }, 400
+
+    event = event.model_dump()
+    
+    # data handling
     event = request.json
     
     print(event)
@@ -71,19 +92,24 @@ def delete_event(uuid):
     methods=["PUT"]
 )
 def update_event(uuid):
-    event = request.json
+    try:
+        event = Event(**request.json)
+
+    except ValidationError as e:
+        return {
+            "error": "invalid_event",
+            "details": e.errors()
+        }, 400
+
+    event = event.model_dump()
 
     db.update_event(event)
 
     return jsonify(event)
 
-@api.route(
-    "/resource",
-    methods=["POST"]
-)
-def add_resource(resource):
-    return jsonify(db.add_resource(resource))
-
+#
+# RESOURCES
+#
 
 @api.route(
     "/resource/<uuid>"
@@ -99,15 +125,37 @@ def get_resource(uuid):
     return jsonify(resource)
 
 @api.route(
+    "/resource",
+    methods=["POST"]
+)
+def add_resource():
+    try:
+        resource = Resource(**request.json)
+
+    except ValidationError as e:
+        return {
+            "error": "invalid_resource",
+            "details": e.errors()
+        }, 400
+
+    resource = resource.model_dump()
+    return jsonify(db.add_resource(resource))
+
+@api.route(
     "/resource/<uuid>",
     methods=["PUT"]
 )
 def update_resource(uuid):
-    resource = db.get_event(uuid)
+    try:
+        resource = Resource(**request.json)
 
-    if resource is None:
-        return jsonify(
-            {"error": "event not found"}
-        ), 404
+    except ValidationError as e:
+        return {
+            "error": "invalid_resource",
+            "details": e.errors()
+        }, 400
+
+    resource = resource.model_dump()
+    db.update_resource(resource)
 
     return jsonify(resource)

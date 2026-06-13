@@ -1,9 +1,8 @@
-from dataclasses import dataclass
+from pydantic import BaseModel, Field
+from typing import List, Optional
 
-
-@dataclass
-class Tag:
-    uuid: str
+class Tag(BaseModel):
+    uuid: Optional[str]
     title: str
 
     def to_dict(self):

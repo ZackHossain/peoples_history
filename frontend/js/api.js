@@ -39,3 +39,20 @@ async function deleteEvent(uuid) {
         method: "DELETE"
     });
 }
+
+async function createResource(resource) {
+    const response = await fetch(`${API_URL}/resources`, {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify(resource)
+    });
+
+    return await response.json();
+}
+
+async function getResource(uuid) {
+    const response = await fetch(`${API_URL}/resources/${uuid}`);
+    return await response.json();
+}

@@ -14,5 +14,22 @@
         "resource_type": "book",
         "summary": "Hello",
         "uuid": "31fc9a16-830b-4df5-908a-1e4bf36a05f3"
+    },
+    {
+        "uuid": "e37d3ce5-2484-472f-a451-70caea8ac703",
+        "title": "Hello",
+        "author": "Chris Harman",
+        "source": "my brain",
+        "link": null,
+        "resource_type": "book",
+        "summary": "Hello"
+    },
+    {
+        "title": "Hello",
+        "author": "Chris Harman",
+        "source": "my brain",
+        "resource_type": "book",
+        "summary": "Hello",
+        "uuid": "4697e87e-85d4-4d49-8de6-8151a0d7ff33"
     }
 ]

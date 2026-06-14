@@ -11,25 +11,44 @@ async function loadEvent() {
     const event =
         await getEvent(uuid);
     
-    console.log(event);
+    countries = ""
+    for (var i = 0; i < event["countries"].length; i++) {
+        countries += event["countries"][i];
+        if (i < event["countries"].length - 1) {
+            countries += ", "
+        }
+    }
 
     document
         .getElementById("event")
         .innerHTML = `
-            <h2>${event.name}</h2>
+            <h1>${event.name}</h1>
         <div class="details">
-            <p>Countries: Russia, Germany</p>
+            <p>Countries: ${countries}</p>
             <p>Timeline: ${event.start_date} - ${event.end_date}</p>
         </div>
         <p>${event.summary}</p>
         <div class="resources">
-            ${getResources(event)}
+            <h3>Resources</h3>
+            ${await getResources(event)}
         </div>
         `;
 }
 
-function getResources(event) {
-    return '<div></div>';
+async function getResources(event) {
+    resources = "";
+    resource_uuids = event["resources"]
+    for (r of resource_uuids) {
+        resource = await getResource(r);
+        resources += resourceCard(resource);
+    }
+    return resources;
+}
+
+function resourceCard(resource) {
+    return `<div class="resource-card">
+                <h4>${resource["title"]}</h4>
+            </div>`;
 }
 
 loadEvent();

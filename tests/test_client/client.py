@@ -61,14 +61,50 @@ def delete_event(event_id):
     print("STATUS:", r.status_code)
     print(r.json())
 
+# -------------------------
+# POST resource
+# -------------------------
+def create_resource():
+    payload = {
+                "title": "Hello",
+                "author": "Chris Harman",
+                "source": "my brain",
+                "resource_type": "book",
+                "summary": "Hello"
+            }
+    r = requests.post(f"{BASE_URL}/resources", json=payload)
+    print("STATUS:", r.status_code)
+    print(json.dumps(r.json(), indent=2))
+
+    return r.json()
+
+# -------------------------
+# GET resource
+# -------------------------
+def get_resource(uuid):
+    r = requests.get(f"{BASE_URL}/resources/{uuid}")
+    
+    print("STATUS:", r.status_code)
+    print(json.dumps(r.json(), indent=2))
+
+    return r.json()
+
 
 # -------------------------
 # simple test flow
 # -------------------------
 if __name__ == "__main__":
+    
+    # print("\n--- CREATE RESOURCE ---")
+    # new_resource = create_resource()
+    
+    # print("\n--- GET RESOURCE ---")
+    # resource = get_resource(new_resource["uuid"])
+    # print(resource)
 
     print("\n--- CREATE EVENT ---")
     new_event = create_event()
+    print(get_resource(new_event["resources"][0]))
     
     # event_id = new_event.get("uuid")
 

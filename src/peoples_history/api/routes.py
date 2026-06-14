@@ -110,20 +110,20 @@ def update_event(uuid):
 #
 
 @api.route(
-    "/resource/<uuid>"
+    "/resources/<uuid>"
 )
 def get_resource(uuid):
-    resource = db.get_event(uuid)
+    resource = db.get_resource(uuid)
 
     if resource is None:
         return jsonify(
-            {"error": "event not found"}
+            {"error": "resource not found"}
         ), 404
 
     return jsonify(resource)
 
 @api.route(
-    "/resource",
+    "/resources",
     methods=["POST"]
 )
 def add_resource():
@@ -140,7 +140,7 @@ def add_resource():
     return jsonify(db.add_resource(resource))
 
 @api.route(
-    "/resource/<uuid>",
+    "/resources/<uuid>",
     methods=["PUT"]
 )
 def update_resource(uuid):

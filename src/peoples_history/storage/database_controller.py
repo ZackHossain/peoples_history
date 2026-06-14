@@ -40,7 +40,7 @@ class DatabaseController:
 
     def add_event(self, event):
         resource_uuids = []
-        if (event["resources"] != None):
+        if ("resources" in event):
             resources = event.pop("resources", None)
             for r in resources:
                 resource_uuids.append(self.add_resource(r)["uuid"])

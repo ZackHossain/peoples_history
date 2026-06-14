@@ -121,5 +121,89 @@
         "resources": [
             "31fc9a16-830b-4df5-908a-1e4bf36a05f3"
         ]
+    },
+    {
+        "name": "asdf",
+        "start_date": "1111-11-11",
+        "end_date": "1111-11-11",
+        "summary": "asdf",
+        "countries": [
+            "Russia"
+        ],
+        "tags": [],
+        "relationships": [],
+        "uuid": "8959221a-e865-4468-af3a-4d1f98fa5742",
+        "resources": []
+    },
+    {
+        "name": "asdf",
+        "start_date": "1111-11-11",
+        "end_date": "1111-11-11",
+        "summary": "asdf",
+        "countries": [
+            "Russia"
+        ],
+        "tags": [],
+        "relationships": [],
+        "uuid": "336eec5c-da3f-4555-8d76-9fe8e33bf541",
+        "resources": []
+    },
+    {
+        "name": "asdf",
+        "start_date": "0011-11-11",
+        "end_date": "0011-11-11",
+        "summary": "asdf",
+        "countries": [
+            "Russia"
+        ],
+        "tags": [],
+        "relationships": [],
+        "uuid": "c5f8c331-1030-499d-adf1-6d77e69174d3",
+        "resources": []
+    },
+    {
+        "name": "asdf",
+        "start_date": "0011-11-11",
+        "end_date": "0011-11-11",
+        "summary": "asdf",
+        "countries": [
+            "Russia"
+        ],
+        "tags": [],
+        "relationships": [],
+        "uuid": "f4d7c648-3eb6-4935-8e8c-28d0b4477737",
+        "resources": []
+    },
+    {
+        "name": "asdf",
+        "start_date": "0011-11-11",
+        "end_date": "0011-11-11",
+        "summary": "asdf",
+        "countries": [
+            "Russia"
+        ],
+        "tags": [],
+        "relationships": [],
+        "uuid": "7f9ca4bf-a595-400f-b716-f463a8280488",
+        "resources": [
+            "edbbee0b-5d0f-462a-b9dd-e524ad3800b5",
+            "31fc9a16-830b-4df5-908a-1e4bf36a05f3"
+        ]
+    },
+    {
+        "name": "October Revolution",
+        "start_date": "1917-11-07",
+        "end_date": "1917-11-08",
+        "summary": "Bolsheviks seize power in Petrograd",
+        "countries": [
+            "Russia"
+        ],
+        "tags": [
+            "revolution"
+        ],
+        "uuid": "4d2f9326-8857-425b-bf6c-20d048c94715",
+        "resources": [
+            "4697e87e-85d4-4d49-8de6-8151a0d7ff33"
+        ]
     }
 ]

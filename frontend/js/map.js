@@ -1,3 +1,29 @@
+const EVENT_COLOURS = {
+    revolution: "#cc0000",
+    bourgeois_revolution: "#48B8D0",
+    anti_colonial: "#F1AF8B",
+    war: "#090C08",
+    counter_revolution: "#0F4880",
+    mass_radicalisation: "#EFA8B8",
+    workers_state: "#560007",
+    significant_moment: "#D8D538",
+    general_info: "#cccccc",
+    strike: "#EBCDD4"
+}
+
+const EVENT_PRIORITY = {
+    revolution: 100,
+    bourgeois_revolution: 50,
+    anti_colonial: 60,
+    war: 50,
+    counter_revolution: 80,
+    mass_radicalisation: 60,
+    workers_state: 100,
+    significant_moment: 30,
+    general_info: 0,
+    strike: 60
+}
+
 let map;
 let countriesLayer;
 let events = [];
@@ -59,19 +85,41 @@ function countryStyle(feature) {
         feature.properties.name;
 
     const active =
-        activeCountries.has(country);
-
+        country in activeCountries
+    active ? console.log(country, " ", active) : () => {};
+    console.log(activeCountries);
+    if (country == "france") {
+        console.log(activeCountries[country]);
+    }
     return {
         color: "#333",
         weight: 1,
         fillOpacity: active ? 0.7 : 0.1,
-        fillColor: active ? "#cc0000" : "#cccccc"
+        fillColor: active ? getCountryColour(activeCountries[country]) : "#cccccc"
     };
+}
+
+function getCountryColour(events) {
+    if (events.length === 0) {
+        return null;
+    }
+
+    let priorityEvent = events[0];
+    let greatestPriority = EVENT_PRIORITY[priorityEvent.type.toLowerCase().replaceAll(" ", "_")]
+
+    for (const event of events) {
+        priority = EVENT_PRIORITY[event.type.toLowerCase().replaceAll(" ", "_")];
+        if (priority > greatestPriority) {
+            greatestPriority = priority;
+            priorityEvent = event;
+        }
+    }
+    return EVENT_COLOURS[priorityEvent.type.toLowerCase().replaceAll(" ", "_")];
 }
 
 function getActiveCountries(year) {
 
-    const countries = new Set();
+    const countries = {};
 
     for (const event of events) {
 
@@ -90,9 +138,11 @@ function getActiveCountries(year) {
             year <= end
         ) {
             for (const c of event.countries) {
-                countries.add(
-                    c
-                );
+                if (c in countries) {
+                    countries[c].push(event);
+                } else {
+                    countries[c] = [event];
+                }
             }
         }
     }

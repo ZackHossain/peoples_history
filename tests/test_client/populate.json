@@ -1,0 +1,309 @@
+[
+  {
+    "name": "First World War",
+    "start_date": "1914-07-28",
+    "end_date": "1918-11-11",
+    "type": "War",
+    "countries": ["france", "germany", "united kingdom", "russia", "austria", "hungary", "italy", "serbia"],
+    "summary": "Imperialist world war that produced unprecedented destruction and helped generate the revolutionary wave of 1917-23.",
+    "tags": ["war", "imperialism"],
+    "relationships": []
+  },
+
+  {
+    "name": "Zimmerwald Conference",
+    "start_date": "1915-09-05",
+    "end_date": "1915-09-08",
+    "type": "Significant Moment",
+    "countries": ["switzerland"],
+    "summary": "Gathering of anti-war socialists opposing the First World War.",
+    "tags": ["internationalism"],
+    "relationships": []
+  },
+
+  {
+    "name": "Easter Rising",
+    "start_date": "1916-04-24",
+    "end_date": "1916-04-29",
+    "type": "Anti-Colonial Struggle",
+    "countries": ["ireland"],
+    "summary": "Armed uprising against British rule in Ireland.",
+    "tags": ["anti-colonialism"],
+    "relationships": []
+  },
+
+  {
+    "name": "February Revolution",
+    "start_date": "1917-03-08",
+    "end_date": "1917-03-16",
+    "type": "Revolution",
+    "countries": ["russia"],
+    "summary": "Mass strikes and demonstrations overthrew Tsar Nicholas II and opened a revolutionary period.",
+    "tags": ["russian revolution"],
+    "relationships": []
+  },
+
+  {
+    "name": "April Theses",
+    "start_date": "1917-04-04",
+    "end_date": "1917-04-04",
+    "type": "Significant Moment",
+    "countries": ["russia"],
+    "summary": "Lenin argued for all power to the soviets and opposition to the Provisional Government.",
+    "tags": ["bolshevism"],
+    "relationships": []
+  },
+
+  {
+    "name": "Russian Workers State",
+    "start_date": "1917-11-07",
+    "end_date": "1924-06-01",
+    "type": "Workers State",
+    "countries": ["russia"],
+    "summary": "The Russian working class seized power in October and established the USSR",
+    "tags": ["bolshevism"],
+    "relationships": []
+  },
+
+  {
+    "name": "Stalinist Counter Revolution",
+    "start_date": "1924-06-01",
+    "end_date": "1991-12-26",
+    "type": "Counter Revolution",
+    "countries": ["russia"],
+    "summary": "The stalinist bureaucracy forms out of the destruction of the Russian workers state and centralises power.",
+    "tags": ["bolshevism"],
+    "relationships": []
+  },
+
+  {
+    "name": "July Days",
+    "start_date": "1917-07-03",
+    "end_date": "1917-07-07",
+    "type": "Mass Radicalisation",
+    "countries": ["russia"],
+    "summary": "Armed demonstrations by workers and soldiers in Petrograd.",
+    "tags": ["russian revolution"],
+    "relationships": []
+  },
+
+  {
+    "name": "Kornilov Affair",
+    "start_date": "1917-08-25",
+    "end_date": "1917-09-13",
+    "type": "Counter Revolution",
+    "countries": ["russia"],
+    "summary": "Attempted military coup that strengthened support for the Bolsheviks.",
+    "tags": ["counter-revolution"],
+    "relationships": []
+  },
+
+  {
+    "name": "October Revolution",
+    "start_date": "1917-11-07",
+    "end_date": "1917-11-08",
+    "type": "Revolution",
+    "countries": ["russia"],
+    "summary": "Insurrection led by the Bolsheviks that transferred power to the soviets.",
+    "tags": ["russian revolution"],
+    "relationships": []
+  },
+
+  {
+    "name": "Russian Civil War",
+    "start_date": "1918-05-01",
+    "end_date": "1922-10-25",
+    "type": "War",
+    "countries": ["russia", "ukraine"],
+    "summary": "Civil war between the Soviet government and counter-revolutionary forces.",
+    "tags": ["civil war"],
+    "relationships": []
+  },
+
+  {
+    "name": "Finnish Civil War",
+    "start_date": "1918-01-27",
+    "end_date": "1918-05-15",
+    "type": "Counter Revolution",
+    "countries": ["finland"],
+    "summary": "Conflict between Red and White forces following Finnish independence.",
+    "tags": ["civil war"],
+    "relationships": []
+  },
+
+  {
+    "name": "German Revolution",
+    "start_date": "1918-11-03",
+    "end_date": "1919-08-11",
+    "type": "Revolution",
+    "countries": ["germany"],
+    "summary": "Mass uprising of workers and soldiers that overthrew the Kaiser and ended the war.",
+    "tags": ["revolution"],
+    "relationships": []
+  },
+
+  {
+    "name": "Spartacist Uprising",
+    "start_date": "1919-01-05",
+    "end_date": "1919-01-12",
+    "type": "Revolution",
+    "countries": ["germany"],
+    "summary": "Revolutionary uprising in Berlin associated with the Spartacist movement.",
+    "tags": ["germany"],
+    "relationships": []
+  },
+
+  {
+    "name": "Murder of Rosa Luxemburg and Karl Liebknecht",
+    "start_date": "1919-01-15",
+    "end_date": "1919-01-15",
+    "type": "Counter Revolution",
+    "countries": ["germany"],
+    "summary": "Leading revolutionaries were murdered by Freikorps forces.",
+    "tags": ["germany"],
+    "relationships": []
+  },
+
+  {
+    "name": "Hungarian Soviet Republic",
+    "start_date": "1919-03-21",
+    "end_date": "1919-08-01",
+    "type": "Workers State",
+    "countries": ["hungary"],
+    "summary": "Short-lived workers' state established during the post-war revolutionary wave.",
+    "tags": ["workers state"],
+    "relationships": []
+  },
+
+  {
+    "name": "Bavarian Soviet Republic",
+    "start_date": "1919-04-06",
+    "end_date": "1919-05-03",
+    "type": "Workers State",
+    "countries": ["germany"],
+    "summary": "Short-lived workers' republic established in Bavaria.",
+    "tags": ["workers state"],
+    "relationships": []
+  },
+
+  {
+    "name": "Biennio Rosso",
+    "start_date": "1919-01-01",
+    "end_date": "1920-12-31",
+    "type": "Mass Radicalisation",
+    "countries": ["italy"],
+    "summary": "Wave of strikes, factory occupations and social unrest that brought Italy close to revolution.",
+    "tags": ["italy", "workers"],
+    "relationships": []
+  },
+
+  {
+    "name": "Italian Factory Occupations",
+    "start_date": "1920-09-01",
+    "end_date": "1920-09-30",
+    "type": "Strike",
+    "countries": ["italy"],
+    "summary": "Hundreds of thousands of workers occupied factories during the height of the Biennio Rosso.",
+    "tags": ["strike"],
+    "relationships": []
+  },
+
+  {
+    "name": "Polish-Soviet War",
+    "start_date": "1919-02-14",
+    "end_date": "1921-03-18",
+    "type": "War",
+    "countries": ["poland", "russia"],
+    "summary": "War between Soviet Russia and Poland during the revolutionary period.",
+    "tags": ["war"],
+    "relationships": []
+  },
+
+  {
+    "name": "Kapp Putsch",
+    "start_date": "1920-03-13",
+    "end_date": "1920-03-17",
+    "type": "Counter Revolution",
+    "countries": ["germany"],
+    "summary": "Right-wing coup attempt defeated by a mass general strike.",
+    "tags": ["counter-revolution"],
+    "relationships": []
+  },
+
+  {
+    "name": "March Action",
+    "start_date": "1921-03-16",
+    "end_date": "1921-04-01",
+    "type": "Revolution",
+    "countries": ["germany"],
+    "summary": "Major confrontation between German workers and the state.",
+    "tags": ["germany"],
+    "relationships": []
+  },
+
+  {
+    "name": "Kronstadt Rebellion",
+    "start_date": "1921-03-01",
+    "end_date": "1921-03-18",
+    "type": "Significant Moment",
+    "countries": ["russia"],
+    "summary": "Revolt of sailors during the final stages of the Russian Civil War.",
+    "tags": ["russia"],
+    "relationships": []
+  },
+
+  {
+    "name": "March on Rome",
+    "start_date": "1922-10-27",
+    "end_date": "1922-10-31",
+    "type": "Counter Revolution",
+    "countries": ["italy"],
+    "summary": "Fascist seizure of power led by Benito Mussolini.",
+    "tags": ["fascism"],
+    "relationships": []
+  },
+
+  {
+    "name": "German October",
+    "start_date": "1923-10-01",
+    "end_date": "1923-10-31",
+    "type": "Revolution",
+    "countries": ["germany"],
+    "summary": "Failed revolutionary attempt during the German crisis of 1923.",
+    "tags": ["germany"],
+    "relationships": []
+  },
+
+  {
+    "name": "Chinese Revolution Begins",
+    "start_date": "1925-05-30",
+    "end_date": "1927-07-15",
+    "type": "Revolution",
+    "countries": ["china"],
+    "summary": "Mass workers' and anti-imperialist movement culminating in the revolutionary struggles of 1925-27.",
+    "tags": ["china"],
+    "relationships": []
+  },
+
+  {
+    "name": "Shanghai Massacre",
+    "start_date": "1927-04-12",
+    "end_date": "1927-04-12",
+    "type": "Counter Revolution",
+    "countries": ["china"],
+    "summary": "Chiang Kai-shek's forces massacred communists and workers in Shanghai.",
+    "tags": ["china"],
+    "relationships": []
+  },
+
+  {
+    "name": "British General Strike",
+    "start_date": "1926-05-03",
+    "end_date": "1926-05-12",
+    "type": "Strike",
+    "countries": ["united kingdom"],
+    "summary": "Nationwide strike involving millions of workers.",
+    "tags": ["britain"],
+    "relationships": []
+  }
+]

@@ -1,209 +1,461 @@
 [
     {
-        "uuid": "bca2f791-e053-4aa7-9a42-ed5ec5424e65",
-        "name": "Russian Revolution",
+        "name": "First World War",
+        "start_date": "1914-07-28",
+        "end_date": "1918-11-11",
+        "type": "War",
+        "countries": [
+            "France",
+            "Germany",
+            "United kingdom",
+            "Russia",
+            "Austria",
+            "Hungary",
+            "Italy",
+            "Serbia"
+        ],
+        "summary": "Imperialist world war that produced unprecedented destruction and helped generate the revolutionary wave of 1917-23.",
+        "tags": [
+            "war",
+            "imperialism"
+        ],
+        "relationships": [],
+        "uuid": "818b7495-eebe-41c8-b30c-8dc34cd5550c",
+        "resources": []
+    },
+    {
+        "name": "Zimmerwald Conference",
+        "start_date": "1915-09-05",
+        "end_date": "1915-09-08",
+        "type": "Significant Moment",
+        "countries": [
+            "Switzerland"
+        ],
+        "summary": "Gathering of anti-war socialists opposing the First World War.",
+        "tags": [
+            "internationalism"
+        ],
+        "relationships": [],
+        "uuid": "71080b9f-cee5-4243-80fb-20e377cc9dde",
+        "resources": []
+    },
+    {
+        "name": "Easter Rising",
+        "start_date": "1916-04-24",
+        "end_date": "1916-04-29",
+        "type": "Anti-Colonial Struggle",
+        "countries": [
+            "Ireland"
+        ],
+        "summary": "Armed uprising against British rule in Ireland.",
+        "tags": [
+            "anti-colonialism"
+        ],
+        "relationships": [],
+        "uuid": "26987def-b8dd-460b-942f-5ff7c56bbb65",
+        "resources": []
+    },
+    {
+        "name": "February Revolution",
         "start_date": "1917-03-08",
-        "end_date": "1917-11-08",
+        "end_date": "1917-03-16",
+        "type": "Revolution",
         "countries": [
             "Russia"
         ],
-        "summary": "The Russian Revolution of 1917!!!!!!"
+        "summary": "Mass strikes and demonstrations overthrew Tsar Nicholas II and opened a revolutionary period.",
+        "tags": [
+            "russian revolution"
+        ],
+        "relationships": [],
+        "uuid": "3675d998-6056-4f02-aaa3-3be671ae2668",
+        "resources": []
+    },
+    {
+        "name": "April Theses",
+        "start_date": "1917-04-04",
+        "end_date": "1917-04-04",
+        "type": "Significant Moment",
+        "countries": [
+            "Russia"
+        ],
+        "summary": "Lenin argued for all power to the soviets and opposition to the Provisional Government.",
+        "tags": [
+            "bolshevism"
+        ],
+        "relationships": [],
+        "uuid": "c24ab15b-36a6-408f-8c9d-d7525ca6446b",
+        "resources": []
+    },
+    {
+        "name": "Russian Workers State",
+        "start_date": "1917-11-07",
+        "end_date": "1924-06-01",
+        "type": "Workers State",
+        "countries": [
+            "Russia"
+        ],
+        "summary": "The Russian working class seized power in October and established the USSR",
+        "tags": [
+            "bolshevism"
+        ],
+        "relationships": [],
+        "uuid": "e39be044-a77f-4024-9815-039dd97b6e5e",
+        "resources": []
+    },
+    {
+        "name": "Stalinist Counter Revolution",
+        "start_date": "1924-06-01",
+        "end_date": "1991-12-26",
+        "type": "Counter Revolution",
+        "countries": [
+            "Russia"
+        ],
+        "summary": "The stalinist bureaucracy forms out of the destruction of the Russian workers state and centralises power.",
+        "tags": [
+            "bolshevism"
+        ],
+        "relationships": [],
+        "uuid": "c9b96ddd-182d-4e48-9e5e-07ff629f9a6b",
+        "resources": []
+    },
+    {
+        "name": "July Days",
+        "start_date": "1917-07-03",
+        "end_date": "1917-07-07",
+        "type": "Mass Radicalisation",
+        "countries": [
+            "Russia"
+        ],
+        "summary": "Armed demonstrations by workers and soldiers in Petrograd.",
+        "tags": [
+            "russian revolution"
+        ],
+        "relationships": [],
+        "uuid": "938b28b5-f7eb-4218-a2fe-7411c784e6f9",
+        "resources": []
+    },
+    {
+        "name": "Kornilov Affair",
+        "start_date": "1917-08-25",
+        "end_date": "1917-09-13",
+        "type": "Counter Revolution",
+        "countries": [
+            "Russia"
+        ],
+        "summary": "Attempted military coup that strengthened support for the Bolsheviks.",
+        "tags": [
+            "counter-revolution"
+        ],
+        "relationships": [],
+        "uuid": "0834c2d6-de1e-449d-8b5e-027f48e790e2",
+        "resources": []
+    },
+    {
+        "name": "October Revolution",
+        "start_date": "1917-11-07",
+        "end_date": "1917-11-08",
+        "type": "Revolution",
+        "countries": [
+            "Russia"
+        ],
+        "summary": "Insurrection led by the Bolsheviks that transferred power to the soviets.",
+        "tags": [
+            "russian revolution"
+        ],
+        "relationships": [],
+        "uuid": "7c8a4152-b3f4-48d8-8153-88dd33840f6a",
+        "resources": []
+    },
+    {
+        "name": "Russian Civil War",
+        "start_date": "1918-05-01",
+        "end_date": "1922-10-25",
+        "type": "War",
+        "countries": [
+            "Russia",
+            "Ukraine"
+        ],
+        "summary": "Civil war between the Soviet government and counter-revolutionary forces.",
+        "tags": [
+            "civil war"
+        ],
+        "relationships": [],
+        "uuid": "16a8c1c3-8088-46ea-8cd4-87725bd90059",
+        "resources": []
+    },
+    {
+        "name": "Finnish Civil War",
+        "start_date": "1918-01-27",
+        "end_date": "1918-05-15",
+        "type": "Counter Revolution",
+        "countries": [
+            "Finland"
+        ],
+        "summary": "Conflict between Red and White forces following Finnish independence.",
+        "tags": [
+            "civil war"
+        ],
+        "relationships": [],
+        "uuid": "bf056e87-80c4-4238-8bd5-0e1f926626a6",
+        "resources": []
     },
     {
         "name": "German Revolution",
-        "start_date": "1918-10-29",
-        "end_date": "1923-11-11",
-        "summary": "German Rev!",
+        "start_date": "1918-11-03",
+        "end_date": "1919-08-11",
+        "type": "Revolution",
         "countries": [
             "Germany"
         ],
-        "resources": [],
-        "tags": [],
+        "summary": "Mass uprising of workers and soldiers that overthrew the Kaiser and ended the war.",
+        "tags": [
+            "revolution"
+        ],
         "relationships": [],
-        "uuid": "95a99175-d976-496b-9940-8cf6262dd640"
+        "uuid": "1310e3c8-60ac-4390-96c5-44a15bb949b1",
+        "resources": []
     },
     {
-        "name": "Bienno Rosso",
+        "name": "Spartacist Uprising",
+        "start_date": "1919-01-05",
+        "end_date": "1919-01-12",
+        "type": "Revolution",
+        "countries": [
+            "Germany"
+        ],
+        "summary": "Revolutionary uprising in Berlin associated with the Spartacist movement.",
+        "tags": [
+            "germany"
+        ],
+        "relationships": [],
+        "uuid": "314f3aec-9a11-4151-ba05-43eef37133ff",
+        "resources": []
+    },
+    {
+        "name": "Murder of Rosa Luxemburg and Karl Liebknecht",
+        "start_date": "1919-01-15",
+        "end_date": "1919-01-15",
+        "type": "Counter Revolution",
+        "countries": [
+            "Germany"
+        ],
+        "summary": "Leading revolutionaries were murdered by Freikorps forces.",
+        "tags": [
+            "germany"
+        ],
+        "relationships": [],
+        "uuid": "7a994cef-54b4-418b-a16c-aef59e34c268",
+        "resources": []
+    },
+    {
+        "name": "Hungarian Soviet Republic",
+        "start_date": "1919-03-21",
+        "end_date": "1919-08-01",
+        "type": "Workers State",
+        "countries": [
+            "Hungary"
+        ],
+        "summary": "Short-lived workers' state established during the post-war revolutionary wave.",
+        "tags": [
+            "workers state"
+        ],
+        "relationships": [],
+        "uuid": "e18e73bf-b1f5-4b7e-9e2f-97a200dc7a8c",
+        "resources": []
+    },
+    {
+        "name": "Bavarian Soviet Republic",
+        "start_date": "1919-04-06",
+        "end_date": "1919-05-03",
+        "type": "Workers State",
+        "countries": [
+            "Germany"
+        ],
+        "summary": "Short-lived workers' republic established in Bavaria.",
+        "tags": [
+            "workers state"
+        ],
+        "relationships": [],
+        "uuid": "1ab8549c-9f82-47d5-9dd5-4c7e31fbd910",
+        "resources": []
+    },
+    {
+        "name": "Biennio Rosso",
         "start_date": "1919-01-01",
-        "end_date": "1920-12-30",
-        "summary": "Italian Revolution\n",
+        "end_date": "1920-12-31",
+        "type": "Mass Radicalisation",
         "countries": [
             "Italy"
         ],
-        "resources": [],
-        "tags": [],
+        "summary": "Wave of strikes, factory occupations and social unrest that brought Italy close to revolution.",
+        "tags": [
+            "italy",
+            "workers"
+        ],
         "relationships": [],
-        "uuid": "d3543354-8127-4177-8d01-a2d40a3b47eb"
-    },
-    {
-        "name": "October Revolution",
-        "start_date": "1917-11-07",
-        "end_date": "1917-11-08",
-        "summary": "Bolsheviks seize power in Petrograd",
-        "countries": [
-            "Russia"
-        ],
-        "tags": [
-            "revolution"
-        ],
-        "uuid": "d1ef4f81-9f0d-4b0c-9692-bcec934dbc49"
-    },
-    {
-        "name": "October Revolution",
-        "start_date": "1917-11-07",
-        "end_date": "1917-11-08",
-        "summary": "Bolsheviks seize power in Petrograd",
-        "countries": [
-            "Russia"
-        ],
-        "tags": [
-            "revolution"
-        ],
-        "uuid": "9c4309c0-785e-4f0e-a77e-863136d963d3"
-    },
-    {
-        "name": "October Revolution",
-        "start_date": "1917-11-07",
-        "end_date": "1917-11-08",
-        "summary": "Bolsheviks seize power in Petrograd",
-        "countries": [
-            "Russia"
-        ],
-        "tags": [
-            "revolution"
-        ],
-        "uuid": "3e294f34-4529-4194-86fc-7e0d4b99cd24"
-    },
-    {
-        "name": "October Revolution",
-        "start_date": "1917-11-07",
-        "end_date": "1917-11-08",
-        "summary": "Bolsheviks seize power in Petrograd",
-        "countries": [
-            "Russia"
-        ],
-        "tags": [
-            "revolution"
-        ],
-        "uuid": "4a8dc239-95fd-4b44-8d2e-9eacaeaea84e",
-        "resources": [
-            "30912b7b-a825-4e3c-9200-fba5e209cf09"
-        ]
-    },
-    {
-        "name": "October Revolution",
-        "start_date": "1917-11-07",
-        "end_date": "1917-11-08",
-        "summary": "Bolsheviks seize power in Petrograd",
-        "countries": [
-            "Russia"
-        ],
-        "tags": [
-            "revolution"
-        ],
-        "uuid": "a63d9083-56f4-4211-b9ef-219d762e20b1",
-        "resources": [
-            "edbbee0b-5d0f-462a-b9dd-e524ad3800b5"
-        ]
-    },
-    {
-        "name": "October Revolution",
-        "start_date": "1917-11-07",
-        "end_date": "1917-11-08",
-        "summary": "Bolsheviks seize power in Petrograd",
-        "countries": [
-            "Russia"
-        ],
-        "tags": [
-            "revolution"
-        ],
-        "uuid": "7b52dbb2-43da-4189-b055-f8ac81a7cff0",
-        "resources": [
-            "31fc9a16-830b-4df5-908a-1e4bf36a05f3"
-        ]
-    },
-    {
-        "name": "asdf",
-        "start_date": "1111-11-11",
-        "end_date": "1111-11-11",
-        "summary": "asdf",
-        "countries": [
-            "Russia"
-        ],
-        "tags": [],
-        "relationships": [],
-        "uuid": "8959221a-e865-4468-af3a-4d1f98fa5742",
+        "uuid": "49cf9c2c-1455-41c7-92f6-ee5bbac29af4",
         "resources": []
     },
     {
-        "name": "asdf",
-        "start_date": "1111-11-11",
-        "end_date": "1111-11-11",
-        "summary": "asdf",
+        "name": "Italian Factory Occupations",
+        "start_date": "1920-09-01",
+        "end_date": "1920-09-30",
+        "type": "Strike",
         "countries": [
-            "Russia"
+            "Italy"
         ],
-        "tags": [],
-        "relationships": [],
-        "uuid": "336eec5c-da3f-4555-8d76-9fe8e33bf541",
-        "resources": []
-    },
-    {
-        "name": "asdf",
-        "start_date": "0011-11-11",
-        "end_date": "0011-11-11",
-        "summary": "asdf",
-        "countries": [
-            "Russia"
-        ],
-        "tags": [],
-        "relationships": [],
-        "uuid": "c5f8c331-1030-499d-adf1-6d77e69174d3",
-        "resources": []
-    },
-    {
-        "name": "asdf",
-        "start_date": "0011-11-11",
-        "end_date": "0011-11-11",
-        "summary": "asdf",
-        "countries": [
-            "Russia"
-        ],
-        "tags": [],
-        "relationships": [],
-        "uuid": "f4d7c648-3eb6-4935-8e8c-28d0b4477737",
-        "resources": []
-    },
-    {
-        "name": "asdf",
-        "start_date": "0011-11-11",
-        "end_date": "0011-11-11",
-        "summary": "asdf",
-        "countries": [
-            "Russia"
-        ],
-        "tags": [],
-        "relationships": [],
-        "uuid": "7f9ca4bf-a595-400f-b716-f463a8280488",
-        "resources": [
-            "edbbee0b-5d0f-462a-b9dd-e524ad3800b5",
-            "31fc9a16-830b-4df5-908a-1e4bf36a05f3"
-        ]
-    },
-    {
-        "name": "October Revolution",
-        "start_date": "1917-11-07",
-        "end_date": "1917-11-08",
-        "summary": "Bolsheviks seize power in Petrograd",
-        "countries": [
-            "Russia"
-        ],
+        "summary": "Hundreds of thousands of workers occupied factories during the height of the Biennio Rosso.",
         "tags": [
-            "revolution"
+            "strike"
         ],
-        "uuid": "4d2f9326-8857-425b-bf6c-20d048c94715",
-        "resources": [
-            "4697e87e-85d4-4d49-8de6-8151a0d7ff33"
-        ]
+        "relationships": [],
+        "uuid": "f40b8ffd-00b1-49c0-a033-828706e7b294",
+        "resources": []
+    },
+    {
+        "name": "Polish-Soviet War",
+        "start_date": "1919-02-14",
+        "end_date": "1921-03-18",
+        "type": "War",
+        "countries": [
+            "Poland",
+            "Russia"
+        ],
+        "summary": "War between Soviet Russia and Poland during the revolutionary period.",
+        "tags": [
+            "war"
+        ],
+        "relationships": [],
+        "uuid": "66b09083-23be-49bb-bc55-1a1d2226fddc",
+        "resources": []
+    },
+    {
+        "name": "Kapp Putsch",
+        "start_date": "1920-03-13",
+        "end_date": "1920-03-17",
+        "type": "Counter Revolution",
+        "countries": [
+            "Germany"
+        ],
+        "summary": "Right-wing coup attempt defeated by a mass general strike.",
+        "tags": [
+            "counter-revolution"
+        ],
+        "relationships": [],
+        "uuid": "5588b71c-2ea4-488f-bcf1-3f8a65b911bc",
+        "resources": []
+    },
+    {
+        "name": "March Action",
+        "start_date": "1921-03-16",
+        "end_date": "1921-04-01",
+        "type": "Revolution",
+        "countries": [
+            "Germany"
+        ],
+        "summary": "Major confrontation between German workers and the state.",
+        "tags": [
+            "germany"
+        ],
+        "relationships": [],
+        "uuid": "4be229b4-32ff-478d-90a9-9d3996b59cc7",
+        "resources": []
+    },
+    {
+        "name": "Kronstadt Rebellion",
+        "start_date": "1921-03-01",
+        "end_date": "1921-03-18",
+        "type": "Significant Moment",
+        "countries": [
+            "Russia"
+        ],
+        "summary": "Revolt of sailors during the final stages of the Russian Civil War.",
+        "tags": [
+            "russia"
+        ],
+        "relationships": [],
+        "uuid": "c4e1f9d2-850a-4ab2-b366-2616863ef73d",
+        "resources": []
+    },
+    {
+        "name": "March on Rome",
+        "start_date": "1922-10-27",
+        "end_date": "1922-10-31",
+        "type": "Counter Revolution",
+        "countries": [
+            "Italy"
+        ],
+        "summary": "Fascist seizure of power led by Benito Mussolini.",
+        "tags": [
+            "fascism"
+        ],
+        "relationships": [],
+        "uuid": "22b9e853-41f2-46da-984f-bf034971bc13",
+        "resources": []
+    },
+    {
+        "name": "German October",
+        "start_date": "1923-10-01",
+        "end_date": "1923-10-31",
+        "type": "Revolution",
+        "countries": [
+            "Germany"
+        ],
+        "summary": "Failed revolutionary attempt during the German crisis of 1923.",
+        "tags": [
+            "germany"
+        ],
+        "relationships": [],
+        "uuid": "3255c24e-daa2-42de-bed9-f4d36d384fee",
+        "resources": []
+    },
+    {
+        "name": "Chinese Revolution Begins",
+        "start_date": "1925-05-30",
+        "end_date": "1927-07-15",
+        "type": "Revolution",
+        "countries": [
+            "China"
+        ],
+        "summary": "Mass workers' and anti-imperialist movement culminating in the revolutionary struggles of 1925-27.",
+        "tags": [
+            "china"
+        ],
+        "relationships": [],
+        "uuid": "a3c20a52-c73f-40f9-a585-7b19b4b37c34",
+        "resources": []
+    },
+    {
+        "name": "Shanghai Massacre",
+        "start_date": "1927-04-12",
+        "end_date": "1927-04-12",
+        "type": "Counter Revolution",
+        "countries": [
+            "China"
+        ],
+        "summary": "Chiang Kai-shek's forces massacred communists and workers in Shanghai.",
+        "tags": [
+            "china"
+        ],
+        "relationships": [],
+        "uuid": "c699f011-2999-494e-94b9-02da5611766b",
+        "resources": []
+    },
+    {
+        "name": "British General Strike",
+        "start_date": "1926-05-03",
+        "end_date": "1926-05-12",
+        "type": "Strike",
+        "countries": [
+            "United kingdom"
+        ],
+        "summary": "Nationwide strike involving millions of workers.",
+        "tags": [
+            "britain"
+        ],
+        "relationships": [],
+        "uuid": "4fe8c1f7-ebd6-4df6-ad43-5bfffa032c42",
+        "resources": []
     }
 ]

@@ -89,11 +89,33 @@ def get_resource(uuid):
 
     return r.json()
 
+# -------------------------
+# CREATE event
+# -------------------------
+def populate():
+    with open("populate.json", 'r') as f:
+        events = json.load(f)
+
+    for e in events:
+        countries = []
+        for c in e["countries"]:
+            countries.append(c.capitalize())
+        e["countries"] = countries
+        r = requests.post(
+            f"{BASE_URL}/events",
+            json=e
+        )
+
+        if (r.status_code != 200):
+            print("STATUS:", r.status_code)
+            print(json.dumps(r.json(), indent=2))
+
 
 # -------------------------
 # simple test flow
 # -------------------------
 if __name__ == "__main__":
+    populate()
     
     # print("\n--- CREATE RESOURCE ---")
     # new_resource = create_resource()
@@ -102,9 +124,9 @@ if __name__ == "__main__":
     # resource = get_resource(new_resource["uuid"])
     # print(resource)
 
-    print("\n--- CREATE EVENT ---")
-    new_event = create_event()
-    print(get_resource(new_event["resources"][0]))
+    # print("\n--- CREATE EVENT ---")
+    # new_event = create_event()
+    # print(get_resource(new_event["resources"][0]))
     
     # event_id = new_event.get("uuid")
 

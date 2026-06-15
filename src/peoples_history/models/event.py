@@ -1,7 +1,8 @@
-from pydantic import BaseModel, Field
+from pydantic import BaseModel, ConfigDict, Field
 from typing import List, Optional
 from datetime import date
 from peoples_history.models.resource import Resource
+from peoples_history.models.event_type import EventType
 
 class Event(BaseModel):
     uuid: Optional[str] = None
@@ -9,6 +10,8 @@ class Event(BaseModel):
 
     start_date: date
     end_date: date
+    
+    type: EventType
 
     summary: str
 

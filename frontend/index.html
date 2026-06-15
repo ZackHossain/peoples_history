@@ -46,9 +46,64 @@
             <i class="fa-solid fa-x"></i>
         </button>
     </div>
-    <br>
-    <label>Year</label>
-    <input type="number" id="year-input" value="1917">
+    <hr>
+    <div class="filters">
+        <!-- Year -->
+         <div class="filter-section">
+            <label><h4>Year</h4></label>
+            <input type="number" id="year-input" value="1917" class="number-input">
+         </div>
+
+        <!-- Timelapse -->
+        <div class="filter-section">
+            <div class="filter-group">
+                <button class="dropdown-btn" onclick="toggleSection('timelapse-content')">
+                    <h4>Timelapse</h4>
+                    <i class="fa-solid fa-angle-down"></i>
+                </button>
+
+                <div id="timelapse-content" class="dropdown-content">
+                    <label>From</label>
+                    <input type="number" id="year-from" value="1914" class="number-input">
+
+                    <label>To</label>
+                    <input type="number" id="year-to" value="1930" class="number-input">
+                    <br>
+                    <button onclick="runTimelapse()">Play</button>
+                </div>
+            </div>
+        </div>
+
+        <hr>
+
+        <!-- Types -->
+        <label for="Types"></label>
+        <div class="filter-section">
+            <button class="dropdown-btn" onclick="toggleSection('types-content')">
+                <h4>Event Types</h4>
+                <i class="fa-solid fa-angle-down"></i>
+            </button>
+
+            <div id="types-content" class="dropdown-content">
+
+                <label><input type="checkbox" value="revolution" checked> Revolution</label>
+                <label><input type="checkbox" value="war" checked> War</label>
+                <label><input type="checkbox" value="strike" checked> Strike</label>
+                <label><input type="checkbox" value="uprising" checked> Uprising</label>
+                <label><input type="checkbox" value="counter_revolution" checked> Counter Revolution</label>
+                <label><input type="checkbox" value="mass_radicalisation" checked> Mass Radicalisation</label>
+                <label><input type="checkbox" value="workers_state" checked> Workers State</label>
+                <label><input type="checkbox" value="general_info" checked> General Info</label>
+
+            </div>
+        </div>
+
+        <!-- Editors -->
+         <!-- EDITOR LINK -->
+        <button class="editor-btn" onclick="goToEditor()">
+            Open Event Editor
+        </button>
+    </div>
 
 </div>
 

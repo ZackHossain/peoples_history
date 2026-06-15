@@ -41,10 +41,22 @@ function toggleSidebar() {
 
 window.toggleSidebar = toggleSidebar;
 
+/**
+ * Filters
+ */
+
+function toggleSection(id) {
+
+    const section =
+        document.getElementById(id);
+
+    section.classList.toggle("open");
+}
+window.toggleSection = toggleSection;
+
 document
     .getElementById("year-input")
     .addEventListener("input", updateMap);
-
 
 /**
  * Basic Map Population
@@ -86,11 +98,7 @@ function countryStyle(feature) {
 
     const active =
         country in activeCountries
-    active ? console.log(country, " ", active) : () => {};
-    console.log(activeCountries);
-    if (country == "france") {
-        console.log(activeCountries[country]);
-    }
+
     return {
         color: "#333",
         weight: 1,

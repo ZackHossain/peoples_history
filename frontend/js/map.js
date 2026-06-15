@@ -29,34 +29,32 @@ let countriesLayer;
 let events = [];
 
 /**
- * Page function
- */
-
-function toggleSidebar() {
-    document
-        .getElementById("sidebar")
-        .classList
-        .toggle("open");
-}
-
-window.toggleSidebar = toggleSidebar;
-
-/**
  * Filters
  */
-
-function toggleSection(id) {
-
-    const section =
-        document.getElementById(id);
-
-    section.classList.toggle("open");
-}
-window.toggleSection = toggleSection;
-
 document
     .getElementById("year-input")
     .addEventListener("input", updateMap);
+
+document
+    .querySelectorAll(".filter-section input[type='checkbox']")
+    .forEach(element => {
+        element.addEventListener("change", updateMap);
+    })
+
+function getTypes() {
+    const checkboxes =
+        document.querySelectorAll(
+            ".filter-section input[type='checkbox']"
+        );
+
+    const types = {};
+
+    checkboxes.forEach(cb => {
+        types[cb.value] = cb.checked;
+    });
+
+    return types;
+}
 
 /**
  * Basic Map Population
@@ -80,10 +78,11 @@ async function initialiseMap() {
 
     events = await getEvents();
 
-    updateMap();
+    // updateMap();
 }
 
 function countryStyle(feature) {
+    const filter = getTypes();
 
     const year =
         parseInt(
@@ -91,13 +90,13 @@ function countryStyle(feature) {
         );
 
     const activeCountries =
-        getActiveCountries(year);
+        getActiveCountries(year, filter);
 
     const country =
         feature.properties.name;
 
     const active =
-        country in activeCountries
+        country in activeCountries;
 
     return {
         color: "#333",
@@ -125,11 +124,18 @@ function getCountryColour(events) {
     return EVENT_COLOURS[priorityEvent.type.toLowerCase().replaceAll(" ", "_")];
 }
 
-function getActiveCountries(year) {
+function getActiveCountries(year, filter) {
 
     const countries = {};
 
     for (const event of events) {
+        type = event.type.toLowerCase().replaceAll(" ", "_");
+        console.log(type);
+
+        if (!filter[type]) {
+            console.log("here");
+            continue;
+        }
 
         const start =
             parseInt(
@@ -154,7 +160,7 @@ function getActiveCountries(year) {
             }
         }
     }
-
+    console.log(countries);
     return countries;
 }
 

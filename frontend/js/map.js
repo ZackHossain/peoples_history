@@ -57,6 +57,27 @@ function getTypes() {
 }
 
 /**
+ * Timelapse
+ */
+const sleep = ms => new Promise(r => setTimeout(r, ms));
+
+async function runTimelapse() {
+    yearFrom = document.getElementById("year-from").value;
+    yearTo = document.getElementById("year-to").value;
+    if (yearFrom >= yearTo) {
+        document.getElementById("year-input").value = yearFrom;
+        updateMap();
+        return;
+    } else {
+        for (let i = yearFrom; i <= yearTo; i++) {
+            document.getElementById("year-input").value = i;
+            updateMap();
+            await sleep(1000);
+        }
+    }
+}
+
+/**
  * Basic Map Population
  */
 
@@ -78,7 +99,7 @@ async function initialiseMap() {
 
     events = await getEvents();
 
-    // updateMap();
+    updateMap();
 }
 
 function countryStyle(feature) {
